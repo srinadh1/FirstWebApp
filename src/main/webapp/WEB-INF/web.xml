@@ -1,0 +1,99 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <filter>
+  	<filter-name>PerformanceFilter</filter-name>
+  	<display-name>PerformanceFilter</display-name>
+  	<description></description>
+  	<filter-class>com.sri.servlets.PerformanceFilter</filter-class>
+  </filter>
+  <filter>
+  	<filter-name>SessionFilter</filter-name>
+  	<display-name>SessionFilter</display-name>
+  	<description></description>
+  	<filter-class>com.sri.servlets.SessionFilter</filter-class>
+  </filter>
+  <filter-mapping>
+  	<filter-name>PerformanceFilter</filter-name>
+  	<url-pattern>/*</url-pattern>
+  </filter-mapping>
+  <filter-mapping>
+  	<filter-name>SessionFilter</filter-name>
+  	<url-pattern>/*</url-pattern>
+   </filter-mapping>
+ 
+  <servlet>
+  	<servlet-name>ItemsInventory</servlet-name>
+  	<display-name>ItemsInventory</display-name>
+  	<description></description>
+  	<servlet-class>com.sri.servlets.ItemsInventory</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>ItemSearch</servlet-name>
+  	<display-name>ItemSearch</display-name>
+  	<description></description>
+  	<servlet-class>com.sri.servlets.ItemSearch</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>AddItem</servlet-name>
+  	<display-name>AddItem</display-name>
+  	<description></description>
+  	<servlet-class>com.sri.servlets.AddItem</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>Controller</servlet-name>
+  	<display-name>Controller</display-name>
+  	<description></description>
+  	<servlet-class>com.sri.servlets.Controller</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>EvaluateRequest</servlet-name>
+  	<display-name>EvaluateRequest</display-name>
+  	<description></description>
+  	<servlet-class>com.sri.servlets.EvaluateRequest</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>Login</servlet-name>
+  	<display-name>Login</display-name>
+  	<description></description>
+  	<servlet-class>com.sri.servlets.Login</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>Logout</servlet-name>
+  	<display-name>Logout</display-name>
+  	<description></description>
+  	<servlet-class>com.sri.servlets.Logout</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>ItemsInventory</servlet-name>
+  	<url-pattern>/ItemsInventory</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ItemSearch</servlet-name>
+  	<url-pattern>/ItemSearch</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>AddItem</servlet-name>
+  	<url-pattern>/AddItem</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Controller</servlet-name>
+  	<url-pattern>/Controller</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>EvaluateRequest</servlet-name>
+  	<url-pattern>/EvaluateRequest</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Login</servlet-name>
+  	<url-pattern>/Login</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Logout</servlet-name>
+  	<url-pattern>/Logout</url-pattern>
+  </servlet-mapping>
+</web-app>
