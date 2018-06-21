@@ -1,2 +1,2 @@
 # FirstWebApp
-My First Git repository
+# My First Git repository for Web Applications.
